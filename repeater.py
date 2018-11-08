@@ -3,7 +3,7 @@
 messageDict = {}
 
 def onQQMessage(bot, contact, member, content):
-	if(not bot.isMe(contact, member)):
+	if(not bot.isMe(contact, member))and('嘤嘤嘤' not in content):
 		uid = contact.ctype + contact.name
 		if(not messageDict.__contains__(uid)):
 			messageDict[uid]=[content,]
