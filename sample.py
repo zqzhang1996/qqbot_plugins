@@ -16,4 +16,5 @@ def onQQMessage(bot, contact, member, content):
 		bot.SendTo(contact, 'http://wiki.jikexueyuan.com/project/github-basics/')
 	elif content == 'Python教程':
 		bot.SendTo(contact, 'http://www.runoob.com/python/python-tutorial.html')
-		
+	elif content == '会长':
+		bot.SendTo(contact,'真可爱！')
