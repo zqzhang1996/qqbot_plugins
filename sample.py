@@ -8,8 +8,8 @@ def onQQMessage(bot, contact, member, content):
 		bot.SendTo(contact, '放我下来！')
 	elif (not bot.isMe(contact, member))and('教练我想学' in content):
 		bot.SendTo(contact, '你已经是个成熟的大学生了，应该学会自己使用搜索引擎')
-	elif (not bot.isMe(contact, member))and('嘤' in content):
-		bot.SendTo(contact, ('@' + (member.name if (contact.ctype != 'buddy') else contact.name) + ' ')+'一拳一个嘤嘤怪')
+#	elif (not bot.isMe(contact, member))and('嘤' in content):
+#		bot.SendTo(contact, ('@' + (member.name if (contact.ctype != 'buddy') else contact.name) + ' ')+'一拳一个嘤嘤怪')
 	elif content == '插件开发':
 		bot.SendTo(contact, 'GitHub地址：https://github.com/zqzhang1996/qqbot_plugins')
 	elif content == 'GitHub教程':
